@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 html {
     overflow: scroll;
     overflow-x: hidden;
@@ -9,4 +11,147 @@ html {
 
 ::-webkit-scrollbar-thumb {
     background: #FF0000;
+}
+
+html, body{
+  font-family: 'Roboto', sans-serif !important;
+}
+
+html, body{
+  background-color : #1D1E21 !important;
+}
+
+
+h1{
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0px 2px 5px #333;
+  margin: 0;
+  color: #FFFFFF;
+}
+
+#wrapper{
+  margin: 20px auto;
+  box-sizing: border-box;
+  overflow: auto;
+  width: 50%;
+}
+
+.block{
+  margin: 5px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  box-sizing: border-box;
+  background-color: transparent;
+  display: inline-block !important;
+  margin-bottom: 100px;
+  margin-right: 100px;
+}
+
+.imgs{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transition: 0.8s;
+  color: white;
+  background-image: url('imgs/theatre.jpg');
+  background-size: cover;
+}
+
+.caption{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: crimson;
+  font-size: 26px;
+  color: white;
+  line-height: 200px;
+  text-align: center;
+  transition: 2s ease-out;
+}
+
+/* Curtain Effect */
+
+.ca{
+  transform: translate(50%);
+  text-align: left;
+}
+
+.cb{
+  transform: translate(-50%);
+  text-align: right;
+}
+
+.block:hover .ca{
+  transform: translate(100%);
+}
+
+.block:hover .cb{
+  transform: translate(-100%);
+}
+
+.block:hover .block1{
+  background-image: url('imgs/rakki.jpg');
+}
+
+.block:hover .block2{
+  background-image: url('imgs/ags.jpg');
+}
+
+.block:hover .block3{
+  background-image: url('imgs/meenakshi.jpg');
+}
+
+.block:hover .block4{
+  background-image: url('imgs/lakshmi.jpg');
+}
+
+.block span{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: translateY(100%);
+  transition: 1.6s 1.2s;
+}
+
+.block:hover span{
+  transform: translateY(0%);
+}
+
+.grid-container {
+  display: grid;
+  grid-column-gap: 50px;
+  grid-template-columns: auto auto;
+  padding: 0px;
+}
+
+.grid-item {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  width: 98%;
+  height: 200px;
+  font-size: 30px;
+  text-align: center;
+}
+
+#booknow{
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto !important;
+    padding: 0px;
+  }
 }
