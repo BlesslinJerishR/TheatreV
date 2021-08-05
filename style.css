@@ -15,6 +15,8 @@ html {
 
 html, body{
   font-family: 'Roboto', sans-serif !important;
+  height: 100%;
+  width: 100%;
 }
 
 html, body{
@@ -30,23 +32,11 @@ h1{
   color: #FFFFFF;
 }
 
-#wrapper{
-  margin: 20px auto;
-  box-sizing: border-box;
-  overflow: auto;
-  width: 50%;
-}
-
 .block{
-  margin: 5px;
+  width: 300px !important;
+  height: 280px !important;
   position: relative;
-  overflow: hidden;
-  float: left;
-  box-sizing: border-box;
-  background-color: transparent;
-  display: inline-block !important;
-  margin-bottom: 100px;
-  margin-right: 100px;
+  left: 33%;
 }
 
 .imgs{
@@ -70,7 +60,7 @@ h1{
   background-color: crimson;
   font-size: 26px;
   color: white;
-  line-height: 200px;
+  line-height: 280px !important;
   text-align: center;
   transition: 2s ease-out;
 }
@@ -129,17 +119,28 @@ h1{
 
 .grid-container {
   display: grid;
-  grid-column-gap: 50px;
+  grid-gap: -200px -200px !important;
   grid-template-columns: auto auto;
-  padding: 0px;
+  padding: 20px;
+  margin: 20px auto;
+  box-sizing: border-box;
+  overflow: auto;
 }
 
 .grid-item {
   border: 1px solid rgba(0, 0, 0, 0.8);
-  width: 98%;
+  width: 100%;
   height: 200px;
   font-size: 30px;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  box-sizing: border-box;
+  background-color: transparent;
+  display: inline-block !important;
+  margin-bottom: 100px;
+  margin-right: 100px;
 }
 
 #booknow{
@@ -150,8 +151,6 @@ h1{
 
 @media only screen and (max-device-width: 480px) {
   .grid-container {
-    display: grid;
     grid-template-columns: auto !important;
-    padding: 0px;
   }
 }
