@@ -166,7 +166,7 @@ h1{
 #foot{
   position: absolute;
   top: 1000px !important;
-  left: 44%;
+  left: 41%;
 }
 
 section{
@@ -175,4 +175,9 @@ section{
 
 .fspace{
   height: -400px !important;
+}
+
+#wrapper{
+  position: relative;
+  left: -50px;
 }
